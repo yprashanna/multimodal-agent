@@ -20,7 +20,7 @@ def configure_gemini():
         st.error("⚠️ GEMINI_API_KEY not found! Please add it in Render dashboard.")
         st.stop()
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')  # Fast & free
+    model = genai.GenerativeModel('gemini-2.0-flash')  # Fast & free
     return model
 
 # Initialize model
